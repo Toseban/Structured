@@ -5,4 +5,10 @@
 <fullyQualifiedTypeName name="android.R"/>
 <fullyQualifiedTypeName name="com.toseban.structured.R.drawable"/>
 <fullyQualifiedTypeName name="com.toseban.structured.R.string"/>
+<fullyQualifiedTypeName name="com.toseban.structured.R.layout"/>
+<fullyQualifiedTypeName name="android.support.v4.view.ViewPager"/>
+<fullyQualifiedTypeName name="com.viewpagerindicator.PageIndicator"/>
+<fullyQualifiedTypeName name="com.toseban.structured.R.id"/>
+<fullyQualifiedTypeName name="com.viewpagerindicator.TitlePageIndicator"/>
+<fullyQualifiedTypeName name="org.fest.assertions.api.com.actionbarsherlock.app.ActionBarAssert"/>
 </qualifiedTypeNameHistroy>

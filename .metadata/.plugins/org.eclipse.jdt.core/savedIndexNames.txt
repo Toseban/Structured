@@ -1,0 +1,9 @@
+INDEX VERSION 1.126+D:\Eigene Dateien\Programmieren\Structured\.metadata\.plugins\org.eclipse.jdt.core
+3689835672.index
+2545880662.index
+2668598125.index
+656235686.index
+742076023.index
+3515282563.index
+318405930.index
+569872443.index

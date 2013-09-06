@@ -1,0 +1,7 @@
+package com.toseban.structured;
+
+import android.support.v4.app.Fragment;
+
+public class FragmentFriday extends Fragment {
+
+}

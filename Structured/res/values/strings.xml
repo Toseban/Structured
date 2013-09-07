@@ -5,4 +5,14 @@
     <string name="action_settings">Settings</string>
     <string name="timetable_activity_title">Timetable</string>
 
+    <string-array name="drawer_fragment_titles_array">
+        <item>Timetable</item>
+        <item>Homework</item>
+        <item>Grades</item>
+        <item>Calendar</item>
+    </string-array>
+
+    <string name="drawer_open">Open navigation drawer</string>
+    <string name="drawer_close">Close navigation drawer</string>
+
 </resources>

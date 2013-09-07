@@ -1547,11 +1547,11 @@ containing a value of this type.
         public static final int clip_horizontal=0x7f05000f;
         public static final int clip_vertical=0x7f05000e;
         public static final int collapseActionView=0x7f050022;
-        public static final int content_frame=0x7f050056;
+        public static final int content_frame=0x7f050058;
         public static final int default_activity_button=0x7f050039;
         public static final int dialog=0x7f050023;
         public static final int disableHome=0x7f05001d;
-        public static final int drawer_layout=0x7f050055;
+        public static final int drawer_layout=0x7f050057;
         public static final int dropdown=0x7f050024;
         public static final int edit_query=0x7f050049;
         public static final int end=0x7f050011;
@@ -1566,9 +1566,9 @@ containing a value of this type.
         public static final int icon=0x7f05003b;
         public static final int ifRoom=0x7f05001f;
         public static final int image=0x7f050038;
-        public static final int indicator=0x7f050058;
+        public static final int indicator=0x7f050055;
         public static final int left=0x7f050006;
-        public static final int left_drawer=0x7f050057;
+        public static final int left_drawer=0x7f050059;
         public static final int left_icon=0x7f050044;
         public static final int listMode=0x7f050016;
         public static final int list_item=0x7f05003a;
@@ -1576,7 +1576,7 @@ containing a value of this type.
         public static final int never=0x7f05001e;
         public static final int none=0x7f050012;
         public static final int normal=0x7f050015;
-        public static final int pager=0x7f050059;
+        public static final int pager=0x7f050056;
         public static final int progress_circular=0x7f050047;
         public static final int progress_horizontal=0x7f050048;
         public static final int radio=0x7f050040;
@@ -1671,10 +1671,11 @@ containing a value of this type.
         public static final int fragment_friday=0x7f030019;
         public static final int fragment_monday=0x7f03001a;
         public static final int fragment_thursday=0x7f03001b;
-        public static final int fragment_tuesday=0x7f03001c;
-        public static final int fragment_wednesday=0x7f03001d;
-        public static final int support_simple_spinner_dropdown_item=0x7f03001e;
-        public static final int timetable=0x7f03001f;
+        public static final int fragment_timetable=0x7f03001c;
+        public static final int fragment_tuesday=0x7f03001d;
+        public static final int fragment_wednesday=0x7f03001e;
+        public static final int support_simple_spinner_dropdown_item=0x7f03001f;
+        public static final int timetable=0x7f030020;
     }
     public static final class menu {
         public static final int timetable=0x7f0d0000;

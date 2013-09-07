@@ -1,0 +1,53 @@
+package com.toseban.structured;
+
+import com.viewpagerindicator.PageIndicator;
+import com.viewpagerindicator.TitlePageIndicator;
+
+import android.content.res.Resources;
+import android.graphics.drawable.Drawable;
+import android.os.Bundle;
+import android.support.v4.app.Fragment;
+import android.support.v4.view.ViewPager;
+import android.support.v7.app.ActionBar;
+import android.view.LayoutInflater;
+import android.view.View;
+import android.view.ViewGroup;
+
+public class FragmentTimetable extends Fragment {
+
+	ActionBar actionBar;
+
+	DayviewFragmentAdapter myAdapter;
+	ViewPager myPager;
+	PageIndicator myIndicator;
+
+	@Override
+	public View onCreateView(LayoutInflater inflater, ViewGroup container,
+			Bundle savedInstanceState) {
+		// TODO Auto-generated method stub
+		return inflater.inflate(R.layout.fragment_timetable, myPager);
+	}
+
+	/*
+	private void actionBarSetUp() {
+		// TODO Auto-generated method stub
+		actionBar = getSupportActionBar();
+		actionBar.setLogo(R.drawable.png_structured);
+		Resources res = getResources();
+		Drawable actionbarBackground = res
+				.getDrawable(R.drawable.actionbar_background);
+		actionBar.setBackgroundDrawable(actionbarBackground);
+		actionBar.setTitle(R.string.timetable_activity_title);
+		actionBar.show();
+	}
+	*/
+
+	private void dayviewFragmentSetUp() {
+		// TODO Auto-generated method stub
+		myAdapter = new DayviewFragmentAdapter(getSupportFragmentManager());
+		myPager = (ViewPager) findViewById(R.id.pager);
+		myPager.setAdapter(myAdapter);
+		myIndicator = (TitlePageIndicator) findViewById(R.id.indicator);
+		myIndicator.setViewPager(myPager);
+	}
+}

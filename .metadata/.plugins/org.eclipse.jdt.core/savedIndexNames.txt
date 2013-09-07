@@ -1,6 +1,5 @@
 INDEX VERSION 1.126+D:\Eigene Dateien\Programmieren\Structured\.metadata\.plugins\org.eclipse.jdt.core
 1122178717.index
-1838798132.index
 877719142.index
 3515282563.index
 2317236171.index

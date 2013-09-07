@@ -3734,3 +3734,12 @@ org.eclipse.core.internal.resources.ResourceException: Marker id 4678 not found.
 
 !ENTRY com.android.ide.eclipse.adt 4 0 2013-09-07 02:19:17.648
 !MESSAGE timetable.xml: Failed to find style 'vpiTitlePageIndicatorStyle' in current theme
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2013-09-07 03:49:35.930
+!MESSAGE timetable.xml: Failed to find style 'vpiTitlePageIndicatorStyle' in current theme
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2013-09-07 03:52:53.109
+!MESSAGE timetable.xml: Failed to find style 'vpiTitlePageIndicatorStyle' in current theme
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2013-09-07 03:57:37.461
+!MESSAGE timetable.xml: Failed to find style 'vpiTitlePageIndicatorStyle' in current theme

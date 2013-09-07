@@ -1,4 +1,4 @@
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res/com.toseban.structured"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -38,14 +38,13 @@
 
         <ListView
             android:id="@+id/left_drawer"
-            android:paddingTop="8dp"
             android:layout_width="240dp"
             android:layout_height="match_parent"
             android:layout_gravity="start"
-            android:background="#e5e5e5"
+            android:background="#f3f3f3"
             android:choiceMode="singleChoice"
-            android:divider="#bbb"
-            android:dividerHeight="1dp" />
+            android:divider="#d1d1d1"
+            android:dividerHeight="0dp" />
     </android.support.v4.widget.DrawerLayout>
 
-</LinearLayout>
+</FrameLayout>

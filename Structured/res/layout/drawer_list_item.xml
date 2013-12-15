@@ -24,4 +24,5 @@
     android:textColor="#777"
     android:textSize="20sp"
     android:textStyle="italic"
-    android:minHeight="48dp"/>
+    android:minHeight="48dp"
+    android:fontFamily="roboto" />

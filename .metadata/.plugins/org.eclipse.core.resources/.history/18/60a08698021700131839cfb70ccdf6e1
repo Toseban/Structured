@@ -1,9 +1,0 @@
-package com.toseban.structured;
-
-import android.support.v4.app.Fragment;
-import android.support.v4.app.FragmentManager;
-import android.support.v4.app.FragmentPagerAdapter;
-
-public class MyFragmentAdapter {
-
-}

@@ -5,6 +5,7 @@ import com.viewpagerindicator.TitlePageIndicator;
 
 import android.os.Bundle;
 import android.app.Activity;
+import android.content.Intent;
 import android.content.res.Configuration;
 import android.content.res.Resources;
 import android.graphics.drawable.Drawable;
@@ -17,6 +18,7 @@ import android.widget.ListView;
 import android.widget.AdapterView.OnItemClickListener;
 import android.support.v4.app.ActionBarDrawerToggle;
 import android.support.v4.app.Fragment;
+import android.support.v4.app.FragmentManager;
 import android.support.v4.view.GravityCompat;
 import android.support.v4.view.ViewPager;
 import android.support.v4.widget.DrawerLayout;
@@ -32,12 +34,13 @@ public class Timetable extends ActionBarActivity {
 	PageIndicator myIndicator;
 
 	private DrawerLayout myDrawerLayout;
-	private ListView myDrawerList;
+	public ListView myDrawerList;
 	private ActionBarDrawerToggle myDrawerToggle;
 
 	private CharSequence myDrawerTitle;
 	private CharSequence myTitle;
 	private String[] myDrawerFragmentTitles;
+	public int selectedDrawerItem;
 
 	Bundle mySavedInstanceState;
 
@@ -144,7 +147,7 @@ public class Timetable extends ActionBarActivity {
 	private class DrawerItemClickListener implements OnItemClickListener {
 
 		@Override
-		public void onItemClick(AdapterView<?> arg0, View view, int position,
+		public void onItemClick(AdapterView parent, View view, int position,
 				long id) {
 			// TODO Auto-generated method stub
 			selectItem(position);
@@ -153,7 +156,31 @@ public class Timetable extends ActionBarActivity {
 
 	public void selectItem(int position) {
 		// TODO Auto-generated method stub
-		Fragment fragment = new Fragment();
+		android.app.Fragment fragment;
+		selectedDrawerItem = position;
+
+		switch (position) {
+		case 0:
+			//fragment = myAdapter.getItem(position);
+			break;
+		case 1:
+			//fragment = new FragmentHomeworkWednesday();
+			break;
+		case 2:
+			break;
+
+		case 3:
+
+			break;
+		}
+		//android.app.FragmentManager fragmentManager = getFragmentManager();
+		//fragmentManager.beginTransaction()
+		//.replace(R.id.content_frame, fragment).commit();
+
+		// update selected item and title, then close the drawer
+		myDrawerList.setItemChecked(position, true);
+		setTitle(myDrawerFragmentTitles[position]);
+		myDrawerLayout.closeDrawer(myDrawerList);
 
 	}
 

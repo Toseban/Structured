@@ -14,7 +14,7 @@ import android.view.View;
 import android.view.ViewGroup;
 
 public class FragmentTimetable extends Fragment {
-
+	
 	ActionBar actionBar;
 
 	DayviewFragmentAdapter myAdapter;
@@ -27,28 +27,36 @@ public class FragmentTimetable extends Fragment {
 		// TODO Auto-generated method stub
 		return inflater.inflate(R.layout.fragment_timetable, myPager);
 	}
-
-	/*
-	private void actionBarSetUp() {
+	
+	@Override
+	public void onStart() {
 		// TODO Auto-generated method stub
-		actionBar = getSupportActionBar();
-		actionBar.setLogo(R.drawable.png_structured);
-		Resources res = getResources();
-		Drawable actionbarBackground = res
-				.getDrawable(R.drawable.actionbar_background);
-		actionBar.setBackgroundDrawable(actionbarBackground);
-		actionBar.setTitle(R.string.timetable_activity_title);
-		actionBar.show();
+		super.onStart();
+		
+		dayviewFragmentSetUp();
 	}
+
+	
+//	private void actionBarSetUp() {
+//		// TODO Auto-generated method stub
+//		actionBar = getView().getSupportActionBar();
+//		actionBar.setLogo(R.drawable.png_structured);
+//		Resources res = getResources();
+//		Drawable actionbarBackground = res
+//				.getDrawable(R.drawable.actionbar_background);
+//		actionBar.setBackgroundDrawable(actionbarBackground);
+//		actionBar.setTitle(R.string.timetable_activity_title);
+//		actionBar.show();
+//	}
 
 
 	private void dayviewFragmentSetUp() {
 		// TODO Auto-generated method stub
-		myAdapter = new DayviewFragmentAdapter(getSupportFragmentManager());
-		myPager = (ViewPager) findViewById(R.id.pager);
+		myAdapter = new DayviewFragmentAdapter(getActivity().getSupportFragmentManager());
+		myPager = (ViewPager) getView().findViewById(R.id.pager);
 		myPager.setAdapter(myAdapter);
-		myIndicator = (TitlePageIndicator) findViewById(R.id.indicator);
+		myIndicator = (TitlePageIndicator) getView().findViewById(R.id.indicator);
 		myIndicator.setViewPager(myPager);
 	}
-	*/
+	
 }
